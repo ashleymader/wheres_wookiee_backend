@@ -7,5 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-ashleym = User.create(username: "AshleyM")
-nickm = User.create(username: "NickM")
+ashleym = Player.create(username: "AshleyM")
+nickm = Player.create(username: "NickM")
+
+Game.create(score: "300", player_id: ashleym.id)
+Game.create(score: "250", player_id: nickm.id)
