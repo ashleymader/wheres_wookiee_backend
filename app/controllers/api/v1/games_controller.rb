@@ -2,14 +2,11 @@ class Api::V1::GamesController < ApplicationController
 
     def index 
         games = Game.all
-        # options = {
-        #     include: [:player, :username]
-        #   }
-        render json: games
+        render json: GameSerializer.new(games)
     end
 
     def create 
-        game = Game.new(game_params)
+        @game = Game.new(game_params)
         if game.save
             render json: game, status: :accepted
         else   
