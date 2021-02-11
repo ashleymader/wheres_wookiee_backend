@@ -6,4 +6,10 @@ Rails.application.routes.draw do
       resources :games, only: [:index, :create]
     end
   end
+
+  namespace :api do 
+    namespace :v1 do 
+      resources :players, only: [:index, :create]
+    end
+  end 
 end
