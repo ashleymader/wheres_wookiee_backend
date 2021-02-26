@@ -101,26 +101,26 @@ The application we will create during the project build series is a "Syllabus Sh
 
 
 - [x] 4. **TEST:** Confirm data at your Rails endpoints! (ex: `http://seeda.com/api/v1/syllabuses`)
-- [ ] 5. Build out your associated models using this same process. **REMEMBER: Focus on building vertically for MVP** this means only starting with 2 or 3 models before moving on to the frontend.
+- [x] 5. Build out your associated models using this same process. **REMEMBER: Focus on building vertically for MVP** this means only starting with 2 or 3 models before moving on to the frontend.
 
 
 ### PART 3: DOM Manipulation, Events, and Fetch using Rails API
 - **JS MANTRA:** When _some event_ happens, I want to make _what kind of_ fetch and then manipulate the DOM _in what way_?
-- [ ] 1. `GET` request
-- [ ] 2. `POST` request
+- [x] 1. `GET` request
+- [x] 2. `POST` request
 
 ### PART 4: OOJS Refactor
 - [ ] 1. Create a Syllabus Class
 
 ### Bonus
-- [ ] Leverage a CSS framework to improve the styling of your application
+- [x] Leverage a CSS framework to improve the styling of your application
   - Easiest to implement: [Bulma](https://bulma.io/)
   - Most popular: [Bootstrap](https://getbootstrap.com/)
   - Also good: [Semantic UI](https://semantic-ui.com/)
   - Not bootstrap: [Materialize](https://materializecss.com/)
 
 ### Confirm
-- [ ] You have a large number of small Git commits
-- [ ] Your commit messages are meaningful
-- [ ] You made the changes in a commit that relate to the commit message
-- [ ] You don't include changes in a commit that aren't related to the commit message
+- [x] You have a large number of small Git commits
+- [x] Your commit messages are meaningful
+- [x] You made the changes in a commit that relate to the commit message
+- [x] You don't include changes in a commit that aren't related to the commit message
