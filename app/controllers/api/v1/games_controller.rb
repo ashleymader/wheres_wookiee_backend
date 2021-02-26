@@ -6,21 +6,14 @@ class Api::V1::GamesController < ApplicationController
     end
 
     def create 
-        @game = Game.new(game_params)
+        game = Game.new(game_params)
         if game.save
-            render json: game, status: :accepted
+            render json: GameSerializer.new(game), status: :accepted
         else   
             render json: {errors: game.errors.full_messages}, status: :unprocessable_entity
-
         end
     end
 
-    # def scoreboard 
-    #     games = Game.all
-    #     high_score = games.sort_by {|s| game[:score]}.last
-    #     low_score = games.sort_by {|s| game[:score]}.first
-    #     render json: scoreboard
-    # end
 
     private
 
