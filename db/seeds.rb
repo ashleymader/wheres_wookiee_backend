@@ -6,9 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Game.destroy_all
+Player.destroy_all
 
 ashleym = Player.create(username: "AshleyM")
 nickm = Player.create(username: "NickM")
 
-Game.create(score: "300", player_id: ashleym.id)
-Game.create(score: "250", player_id: nickm.id)
+Game.create(score: "900", player_id: ashleym.id)
+Game.create(score: "750", player_id: nickm.id)
