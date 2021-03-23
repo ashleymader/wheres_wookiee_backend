@@ -2,7 +2,7 @@ class Api::V1::GamesController < ApplicationController
 
     def index 
         games = Game.all.includes(:player)
-        high_score = games.sort_by {|score| score[:score]}.reverse
+        high_score = games.sort_by{|score| score[:score].to_i}.reverse
         render json: GameSerializer.new(high_score)
     end
 

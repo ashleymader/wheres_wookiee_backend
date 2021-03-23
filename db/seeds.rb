@@ -12,5 +12,5 @@ Player.destroy_all
 ashleym = Player.create(username: "AshleyM")
 nickm = Player.create(username: "NickM")
 
-Game.create(score: "900", player_id: ashleym.id)
-Game.create(score: "750", player_id: nickm.id)
+Game.create(score: "600", player_id: ashleym.id)
+Game.create(score: "450", player_id: nickm.id)
